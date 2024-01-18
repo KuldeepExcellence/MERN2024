@@ -1,10 +1,10 @@
-<p id="name">       Kuldeep Sharma        </p>
+<!-- <p id="name">       Kuldeep Sharma        </p>
 <p>Edunova</p>
 <p id="name2">EduNova Technology</p>
 <input>
-<!-- input -> operation -> output  -->
+ input -> operation -> output  -->
 
-<script>
+<!-- <script>
 
     // DOM :- document object Model  
    var a = document.getElementById("name2").innerHTML;
@@ -14,4 +14,43 @@
 
 
 
+</script>  -->
+
+<!-- 
+
+<input id="age">
+<button onclick="show()">Show Data</button>
+
+<script>
+
+    function show()
+    {
+        var age = document.getElementById("age").value;
+        console.log("my age is ==",age)
+    }
+  
+</script> -->
+
+
+Enter First Number <input id="num1">
+Enter Second Number <input id="num2">
+<button onclick="sum()">Click To Show Result</button>
+the Answer is = <input id="result">
+
+<script>
+    function sum()
+    {
+        var a = parseInt( document.getElementById("num1").value); // value transfer always right to left    <-----
+        var b = parseInt(document.getElementById("num2").value);
+        var c = a+b;
+        document.getElementById("result").value = c;
+      
+    }
 </script>
+
+
+
+
+
+
+
