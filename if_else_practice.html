@@ -1,0 +1,80 @@
+<!-- <h1>hello world</h1> -->
+
+<!-- 
+Control Statements :- 
+1. conditionjal statment :- if-else , switch 
+2. looping statement :- while , do-while , for , for in , for off . 
+3. jump statment :- continue , break . 
+ -->
+<!-- 
+
+enter lenght :- <input id="le"> 
+enter bredth :- <input id="br">  
+<button onclick="area()">Area</button>
+<p id="figure"></p><input id="ar">
+<script>
+    function area()
+    {
+        var a = parseInt(document.getElementById("le").value)
+        var b = parseInt(document.getElementById("br").value)
+
+        if(a==b)
+        {
+            var area_of_square = a*a;
+            document.getElementById("figure").innerHTML= "Area of Square = "
+            document.getElementById("ar").value = area_of_square;
+
+        }
+        else
+        {
+            var area_of_rectangle = a*b;
+            document.getElementById("figure").innerHTML= "Area of Rectangle = "
+            document.getElementById("ar").value = area_of_rectangle;
+
+        }
+    }
+</script> -->
+
+
+
+
+
+<!-- 
+
+enter your anual income :- <input id="income"> 
+<button onclick="tax()">Calculate Your Tax</button>
+<p id="tax"></p><input id="t">
+Net Income After Tax Deduction <input id="net">
+<script>
+    function tax()
+    {
+        var income = parseInt(document.getElementById("income").value)
+        
+        // > , < , >=  , <= , == , === , != 
+
+
+        // a=b :- assigmeent operator , value of b assigned to a 
+        // a==b :- comparison operator :- value   10==10   10 =="10"
+        // a===b :- comparison operator :- value along with type   10===10 :- true , 10==="10" :- false  
+
+        if(income>=500000)
+        {
+            var tax = income * (20/100);
+            document.getElementById("tax").innerHTML= "Your Income Tax = "
+            document.getElementById("t").value = tax;
+            document.getElementById("net").value = income-tax;
+
+        }
+        else
+        {
+            document.getElementById("tax").innerHTML= "Your Income Tax = "
+            document.getElementById("t").value = "No Income Tax";
+            document.getElementById("net").value = income ;
+
+        }
+    }
+</script> 
+ -->
+
+
+
