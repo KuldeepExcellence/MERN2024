@@ -81,18 +81,24 @@
 // 2----> n-1
 
 
-var number = 13;
+
+
+// 30/2 :- 
+// 31:- 
+
+
+var number = 1000000007;  
 var i = 2
-var flag = false ;
+var flag = 0 ;
 
 
-while(i<= (number - 1))
+while(i<= ((number - 1)/2)) 
 {
 
     if(number%i==0)
     {
        
-        flag = true ;
+        flag = 1 ;
         break;
     }
     
@@ -101,7 +107,7 @@ while(i<= (number - 1))
 
 // true:- Not Prime  , false :- Prime
 
-if(flag == true)
+if(flag == 1)
 {
     console.log("Not Prime")
 }
