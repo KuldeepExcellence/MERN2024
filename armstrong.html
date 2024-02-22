@@ -1,0 +1,40 @@
+<script>
+    var num = 153
+    var num2=num
+    // step 1 :- digits 1,2,3
+    // step 2 :- qube :- 1 , 8 , 27 
+    // step 3 :- sum :- 36
+
+
+    // 123938948584955458%10= 8
+
+    // 123938948584955458/10=parseInt(12393894858495545.8) = 12393894858495545
+    
+// 1%10 =1
+// 1/10= 0.1 = 0 
+var q = 0
+var sum = 0 
+    while(num>0)
+    {
+        console.log(num%10)
+
+        temp = num%10
+
+        q=temp*temp*temp
+        sum = sum+q
+        console.log("qube of digit = "+q)
+        num = parseInt(num/10)
+        
+
+    }
+
+    console.log("sum of digits = "+sum)
+
+    if(num2==sum)
+    {
+        console.log("number is armstrong")
+    }
+    else{
+        console.log("number is not armstring")
+    }
+</script>
