@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Among three numbers</title>
+</head>
+<body>
+    <h1>Largest Among three Numbers</h1>
+
+    Enter Any Number (1):-<input id="num1"></input><br>
+    Enter Any Number (2):-<input id="num2"></input><br>
+    Enter Any Number (3):-<input id="num3"></input><br>
+
+    <button onclick=" long()">Check</button> <br>
+    
+    <script>
+
+    function long()
+    {
+        
+        var a1 = parseInt(document.getElementById("num1").value)
+        var a2 = parseInt(document.getElementById("num2").value)
+        var a3 = parseInt(document.getElementById("num3").value)
+
+        var largest = a1;
+        var i=0;
+
+        document.write("The Number is enter in first",a1+"<br>")
+        document.write("The Number is enter in Second",a2+"<br>")
+        document.write("The Number is enter in third",a3+"<br>")
+        
+
+        while(i<2)
+        {
+
+            if(largest<a2)
+            {
+                largest=a2;
+                document.write("The Number is enter in this field",largest+"<br>")
+            }
+
+            if(largest<a3)
+            {
+                largest=a3;
+                document.write("The Number is enter in this field",largest+"<br>")
+            }
+
+            i++
+            
+        }
+        document.write("The Largest Number is",largest)
+        
+    }
+
+    </script>
+
+</body>
+</html>
