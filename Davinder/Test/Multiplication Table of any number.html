@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Multiplication Table of any Number</title>
+</head>
+<body>
+    
+    <h1>Print Multiplication Table of any Number</h1>
+
+    Enter Any Number:-<input id="a"></input>
+
+    <button onclick=" show()">Print Table of (1 to any Numbers)</button> <br>
+    
+<script>
+
+    
+    function show()
+    {
+        
+        var a = parseInt(document.getElementById("a").value)
+        var num=1;
+        
+        while(num<=10)
+        {
+            
+            document.write(a+"*"+ num +"="+ a*num +"<br>")
+            num++
+        }    
+        
+    }
+    
+    </script>
+
+</body>
+</html>
