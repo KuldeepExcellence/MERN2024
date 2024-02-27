@@ -1,5 +1,5 @@
 <script>
-    var num = 153
+    var num = -153
     var num2=num
     // step 1 :- digits 1,2,3
     // step 2 :- qube :- 1 , 8 , 27 
@@ -14,7 +14,7 @@
 // 1/10= 0.1 = 0 
 var q = 0
 var sum = 0 
-    while(num>0)
+    do
     {
         console.log(num%10)
 
@@ -26,7 +26,7 @@ var sum = 0
         num = parseInt(num/10)
         
 
-    }
+    }while(num>0)
 
     console.log("sum of digits = "+sum)
 
