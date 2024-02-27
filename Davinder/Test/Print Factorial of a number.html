@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Factorial of a Number</title>
+</head>
+<body>
+    
+    <h1>Print Factorial of Number</h1>
+
+    Enter Any Number:-<input id="num"></input>
+
+    <button onclick=" factorial()">Check</button> <br>
+    
+<script>
+
+    
+    function factorial()
+    {
+        
+        var num = (document.getElementById("num").value)
+        var i=1;
+        var fact=num;
+        
+        document.write("The Number is Enter is :-",num+"<br>")
+
+        do
+        {
+            fact=fact*i
+            i++
+            document.write("The Factorial of number is:-",fact+"<br>")
+        }
+        while(i<=num)
+
+        
+}
+    </script>
+
+</body>
+</html>
