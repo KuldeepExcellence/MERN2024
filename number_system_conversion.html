@@ -1,0 +1,28 @@
+<script>
+    // console.log("hello world")
+
+
+    // convert a number from decimal to binary ;- 12 :-
+    // 12 /2 :- 6,0
+    // 6/2:- 3,0
+    // 3/2:- 1,1
+    // :- 1,1,0,0 
+    //     2^3,2^2,2^1,2^0
+
+
+    //     0+0+4+8 = 12 
+
+
+
+
+    var number = 12
+    var convert
+    while(number >0)
+    {
+        console.log(number % 2+"k ")// reminder 
+        convert =  convert+ number%2+"."
+        number = parseInt(number/2)
+    }
+    console.log(convert)
+
+</script>
