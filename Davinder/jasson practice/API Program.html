@@ -18,22 +18,25 @@
 function dogimage()
 {
 
-   // var xhr = new XMLHttpRequest();
+   var xhr = new XMLHttpRequest();
 
-//var url = "https://dog.ceo/api/breeds/image/random";
+var url = "https://dog.ceo/api/breeds/image/random";
 
-//xhr.open("GET", url, true);
+xhr.open("GET", url, true);
 
-//xhr.onreadystatechange = function () {
-  //if (xhr.readyState === 4 && xhr.status === 200) {
-    //var response = JSON.parse(xhr.responseText);
-    //console.log(response.message); // This will log the URL of a random dog image
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    var response = JSON.parse(xhr.responseText);
+    console.log(response.message); // This will log the URL of a random dog image
+    // console.log("hello world")
+    document.getElementById("dog").src = response.message
+  }
+  else{
+    console.log(xhr.onerror)
+  }
+};
 
-    document.getElementById("dog").src = "https:\/\/images.dog.ceo\/breeds\/lhasa\/n02098413_14953.jpg";
-  //}
-//};
-
-//xhr.send();
+xhr.send();
 
     
 }
